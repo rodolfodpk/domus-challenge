@@ -227,7 +227,7 @@ and the payload:
 }
 ```
 
-So since I started with a mocked implementation, when trying to consume the real movies app, I got errors since the
+Therefor, since I started with a mocked implementation, when trying to consume the real movies app, I got errors since the
 Content-Type header is missing. 
 
 I could work around it, but then I would have to change a lot of things.
