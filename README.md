@@ -227,8 +227,9 @@ and the payload:
 }
 ```
 
-Therefor, since I started with a mocked implementation, when trying to consume the real movies app, I got errors since the
-Content-Type header is missing. 
+Therefor, since I started with a mocked implementation, when trying to consume the real movies app, I got errors since
+the
+Content-Type header is missing.
 
 I could work around it, but then I would have to change a lot of things.
 
@@ -238,12 +239,12 @@ I could work around it, but then I would have to change a lot of things.
 * It has
   an [`ArchUnit`](https://www.archunit.org/use-cases) [`ArchUnitTest`](./src/test/java/com/domus/ArchUnitTest.java) to
   assert basic architecture
-* It has a [`DirectorsApiE2eTest`](./src/test/java/com/domus/DirectorsApiE2eTest.java) 
+* It has a [`DirectorsApiE2eTest`](./src/test/java/com/domus/DirectorsApiE2eTest.java)
 * It has a [`DirectorsServiceTest`](./src/test/java/com/domus/DirectorsServiceTest.java)
 * It has a [`K6`](https://k6.io/) [`Load test`](./k6_script.js)
 * For the sake of simplicity and time to deliver:
-    * It's far from production ready: cache (since the data source is not so volatile), logs, errors, containers, 
-  circuit breakers, retries, rate limiter, observability, etc
+    * It's far from production ready: cache (since the data source is not so volatile), logs, errors, containers,
+      circuit breakers, retries, rate limiter, observability, etc
 
 ## Running load test
 
